@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html>
+  <head>
+   <title>Burak Erdaloğlu Hesap Makinesi</title>
+  </head>
+
+  <body>
+    <h1 style="text-align:center" id="baslık"> --Burak Erdaloğlu--</h1>
+     <form>
+       <input type="text" id="sonuc" disabled />
+       <br />
+       <input type="button" id="butonfnc" value="-" onclick="sonuc.value +='-'"
+       />
+      <input type="button" id="butonsayi" value="1" onclick="sonuc.value +='1'"  />
+      <input type="button" id="butonsayi" value="2" onclick="sonuc.value +='2'" />
+      <input type="button" id="butonsayi" value="3" onclick="sonuc.value +='3'" />
+      <br>
+      <input type="button" id="butonfnc" value="/" onclick="sonuc.value +='/'"
+       />
+      <input type="button" id="butonsayi" value="4" onclick="sonuc.value +='4'" />
+      <input type="button" id="butonsayi" value="5" onclick="sonuc.value +='5'" />
+      <input type="button" id="butonsayi" value="6" onclick="sonuc.value +='6'" />
+      <br>
+       
+      <input type="button" id="butonfnc" value="*" onclick="sonuc.value +='*'"
+       />
+      <input type="button" id="butonsayi" value="7" onclick="sonuc.value +='7'"
+      />
+      <input type="button" id="butonsayi" value="8" onclick="sonuc.value +='8'"
+      />
+      <input type="button" id="butonsayi" value="9" onclick="sonuc.value +='9'"
+      />
+      <br>
+      <input type="button" id="butonfnc" value="C" onclick="sonuc.value =''" 
+      />
+      
+     
+       <input type="button" id="butonfnc" value="+" onclick="sonuc.value +='+'"
+       />
+       <input type="button" id="butonsayi" value='0' onclick="sonuc.value +='0'"
+       />
+       <input type="button" id="btnsil" value="<" onclick="sonuc.value = sonuc.value.substring(0, sonuc.value.length - 1)" />
+       
+       
+       
+       <br>
+       <input
+       type="button"
+       id="butonessittir"
+       value="="
+       onclick="sonuc.value = eval (sonuc.value)"
+       />
+
+     </form>
+  </body>
+
+  <style>
+body{
+      background-image: url('https://wallpapercave.com/wp/wp2641160.jpg')
+    }
+    #baslık {
+       color: white;
+    }
+    #btnsil
+    {
+      padding: 30px 27px;
+      background-color: #732323;
+      color: white;
+    }
+ form {
+      text-align: center;
+          }
+
+#butonessittir {
+  padding: 15px 175px
+}
+form {
+  text-aling: center;
+}
+      #sonuc{
+      padding: 15px 30px ;  
+      font-size:25px;
+      border: 5px solid white;
+      border-radius: 100px;
+      margin-bottom: 25px;
+      font-color: solid white;
+      color: white;
+    }
+    input[type='button'] {
+      padding:30px 30px;
+      font-size: 27px;
+      border-radius: 100px;
+      margin: 7px
+    }
+#butonsayi {
+      background-color: #E1D8CB;
+      color: black;
+    }
+
+    #butonfnc {
+      background-color: #732323;
+      color: white;
+    }
+  </style>
+</html>
